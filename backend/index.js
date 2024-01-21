@@ -6,11 +6,8 @@ const path = require("path");
 app.use(express.json());
 app.use(cors())
 
-// const mongoose = require('mongoose');
-// const mongoString = "mongodb+srv://aicds2022:2zyQxaHf@cluster0.dbp476t.mongodb.net/database"
 const mongoose = require('mongoose');
-const mongoString = "mongodb+srv://aicds2022:2zyQxaHf@cluster0.dbp476t.mongodb.net/database"
-// const mongoString = "mongodb+srv://othmannsk:oSIMDTo46huabHB1@cluster0.efb5zro.mongodb.net/BookStoreDatabase?retryWrites=true&w=majority"
+const mongoString = ""
 mongoose.connect(mongoString)
 const database = mongoose.connection
 
